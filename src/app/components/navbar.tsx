@@ -4,8 +4,8 @@ import { Link } from 'next-view-transitions'
 
 export default function Navbar(){
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-black p-6">
-        <div className="flex items-center flex-shrink-0 mx-auto gap-12 font-standard text-2xl font-bold">
+    <nav className="flex items-center justify-between flex-wrap bg-gray p-6">
+        <div className="flex items-center flex-shrink-0 mx-auto gap-24 font-standard text-2xl font-medium">
             
             <div className="hover:text-white">
                 <Link href='/'>Home</Link>
