@@ -28,7 +28,7 @@ export default function Home() {
 
           {/* Blurb underneath header */}
           <h3 className="text-xl sm:text-2xl font-light font-standard mt-3">
-                I'm a <span className="font-bold">software engineer</span> based in Los Angeles, CA. If I'm not coding I'm probably lifting weights or playing guitar.
+                I'm a new grad <span className="font-bold">software engineer</span> based in Los Angeles, CA. If I'm not coding I'm probably lifting weights or playing guitar.
           </h3>
 
           {/* Photo Gallery */}
