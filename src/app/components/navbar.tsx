@@ -1,21 +1,22 @@
 'use client';
 import { Link } from 'next-view-transitions';
-import { usePathname } from 'next/navigation'; // Import usePathname to check the current route
+import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 
 export default function Navbar() {
+  
   const pathname = usePathname(); // Get the current route
   const [indicatorStyle, setIndicatorStyle] = useState({});
   const homeRef = useRef(null);
-  const aboutRef = useRef(null);
-  const contactRef = useRef(null);
+  const experienceRef = useRef(null);
+
 
   // Update the indicator position based on the active tab
   useEffect(() => {
     let activeElement;
     if (pathname === '/') activeElement = homeRef.current;
-    else if (pathname === '/About') activeElement = aboutRef.current;
-    else if (pathname === '/Contact') activeElement = contactRef.current;
+    else if (pathname === '/Experience') activeElement = experienceRef.current;
+  
 
     if (activeElement) {
       const { offsetLeft, offsetWidth, offsetHeight } = activeElement;
@@ -49,15 +50,15 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* About Link */}
-        <div ref={aboutRef} className="relative">
+        {/* Experience Link */}
+        <div ref={experienceRef} className="relative">
           <Link
-            href="/About"
+            href="/Experience"
             className={`relative px-6 py-3 rounded-lg transition-colors ${
-              pathname === '/About' ? 'text-white' : 'hover:text-white'
+              pathname === '/Experience' ? 'text-white' : 'hover:text-white'
             }`}
           >
-            About
+            Experience
           </Link>
         </div>
        
