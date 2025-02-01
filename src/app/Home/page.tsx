@@ -17,7 +17,7 @@ export default function Home() {
     return (
       <main className="flex justify-center items-center min-h-screen bg-gray cursor-default">
         {/* Centered Box */}
-        <div className="bg-gray text-white w-[40rem] min-h-screen p-5">
+        <div className="bg-gray text-black dark:text-white w-[40rem] min-h-screen p-5">
 
           {/* Header section */}
             <h1 className="text-3xl sm:text-5xl font-extrabold font-standard inline-flex">H
