@@ -1,4 +1,5 @@
 import Typewriter from "typewriter-effect";
+import Image from 'next/image';
 
 
 export default function Home() {
@@ -38,8 +39,10 @@ export default function Home() {
               {photos.map((photo, index) => (
                 <div key={index} className="relative group">
                   {/* Image */}
-                  <img
+                  <Image
                     src={photo.src}
+                    width={500}
+                    height={500}
                     alt={photo.alt}
                     className="w-full h-64 object-cover rounded-lg shadow-lg transition-transform group-hover:scale-105"
                   />
