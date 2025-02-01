@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 
 export default function Experience() {
 
@@ -43,7 +43,7 @@ export default function Experience() {
                 GPA: 3.63
               </h4>
             </div>
-            <img src="/calpolyicon.png" alt="Cal Poly Icon" className="sm:w-30 sm:h-20 w-21 h-14" />
+            <Image src="/calpolyicon.png" height={150} width={100} alt="Cal Poly Icon" />
           </div>
         </section>
 
