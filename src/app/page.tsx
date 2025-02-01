@@ -1,10 +1,18 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+
+import Home from "./Home/page";
+
+
+// website entry
+// this is a test for a test commit
+// another test
+// one more test
+export default function App() {
+ 
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212]">
-      <h1 className="text-white">Portfolio Website</h1>
-
-    </main>
+      <div>
+        <Home/>  
+      </div> 
   );
 }
