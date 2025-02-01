@@ -1,4 +1,6 @@
+'use client'
 import Typewriter from "typewriter-effect";
+import Image from 'next/image';
 
 
 export default function Home() {
@@ -28,7 +30,7 @@ export default function Home() {
 
           {/* Blurb underneath header */}
           <h3 className="text-xl sm:text-2xl font-light font-standard mt-3">
-                I'm a new grad <span className="font-bold">software engineer</span> based in Los Angeles, CA. If I'm not coding I'm probably lifting weights or playing guitar.
+            I&apos;m a new grad <span className="font-bold">software engineer</span> based in Los Angeles, CA. If I&apos;m not coding I&apos;m probably lifting weights or playing guitar.
           </h3>
 
           {/* Photo Gallery */}
@@ -38,8 +40,10 @@ export default function Home() {
               {photos.map((photo, index) => (
                 <div key={index} className="relative group">
                   {/* Image */}
-                  <img
+                  <Image
                     src={photo.src}
+                    width={500}
+                    height={500}
                     alt={photo.alt}
                     className="w-full h-64 object-cover rounded-lg shadow-lg transition-transform group-hover:scale-105"
                   />
