@@ -26,7 +26,7 @@ export default function Experience() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray">
       {/* Centered Box */}
-      <div className="bg-gray text-white w-[40rem] min-h-screen p-5">
+      <div className="bg-gray text-black dark:text-white w-[40rem] min-h-screen p-5">
         {/* Education section */}
         <section>
           <h1 className="text-2xl sm:text-4xl font-extrabold font-standard inline-flex">
@@ -126,7 +126,7 @@ export default function Experience() {
             {languages.map((language, index) => (
               <div
                 key={index}
-                className="bg-gray-200/50 text-white sm:text-sm text-xs font-semibold py-1 px-3 rounded-lg shadow-md hover:scale-105 transition-transform cursor-default"
+                className="dark:bg-gray-200/50 bg-gray-800 text-white sm:text-sm text-xs font-semibold py-1 px-3 rounded-lg shadow-md hover:scale-105 transition-transform cursor-default"
               >
                 {language.str}
               </div>

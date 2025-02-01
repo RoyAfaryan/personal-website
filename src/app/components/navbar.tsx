@@ -34,7 +34,7 @@ export default function Navbar() {
       <div className="flex items-center flex-shrink-0 mx-auto gap-24 font-standard text-2xl font-bold text-gray-400 relative">
         {/* Active Indicator */}
         <span
-          className="absolute bottom-0 h-10 bg-white/10 backdrop-blur-sm rounded-lg transition-all duration-300 ease-in-out"
+          className="absolute bottom-0 h-10 dark:bg-white/10 bg-gray-200 backdrop-blur-sm rounded-lg transition-all duration-300 ease-in-out"
           style={indicatorStyle}
         ></span>
 
@@ -43,7 +43,7 @@ export default function Navbar() {
           <Link
             href="/"
             className={`relative px-6 py-3 rounded-lg transition-colors ${
-              pathname === '/' ? 'text-white' : 'hover:text-white'
+              pathname === '/' ? 'dark:text-white text-black' : 'dark:hover:text-white hover:text-black'
             }`}
           >
             Home
@@ -55,7 +55,7 @@ export default function Navbar() {
           <Link
             href="/Experience"
             className={`relative px-6 py-3 rounded-lg transition-colors ${
-              pathname === '/Experience' ? 'text-white' : 'hover:text-white'
+              pathname === '/Experience' ? 'dark:text-white text-black' : 'dark:hover:text-white hover:text-black'
             }`}
           >
             Experience
