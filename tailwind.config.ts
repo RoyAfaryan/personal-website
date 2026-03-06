@@ -2,7 +2,7 @@ import { Smooch_Sans } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
-  darkMode: "media",
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
