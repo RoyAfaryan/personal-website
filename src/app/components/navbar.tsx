@@ -30,7 +30,8 @@ export default function Navbar() {
   }, [pathname]);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-gray p-6">
+    <div className=''>
+    <nav className="flex items-center justify-between flex-wrap bg-gray p-6 dark:bg-black">
       <div className="flex items-center flex-shrink-0 mx-auto gap-24 font-standard text-2xl font-bold text-gray-400 relative">
         {/* Active Indicator */}
         <span
@@ -64,5 +65,6 @@ export default function Navbar() {
        
       </div>
     </nav>
+    </div>
   );
 }
