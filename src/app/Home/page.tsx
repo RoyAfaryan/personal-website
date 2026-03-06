@@ -15,9 +15,10 @@ export default function Home() {
     ]
 
     return (
+      <div className="">
       <main className="flex justify-center items-center min-h-screen bg-gray cursor-default">
         {/* Centered Box */}
-        <div className="bg-gray text-black dark:text-white w-[40rem] min-h-screen p-5">
+        <div className="bg-gray text-white dark:bg-gray-950 dark:text-white w-[40rem] min-h-screen p-5">
 
           {/* Header section */}
             <h1 className="text-3xl sm:text-5xl font-extrabold font-standard inline-flex">H
@@ -30,7 +31,7 @@ export default function Home() {
 
           {/* Blurb underneath header */}
           <h3 className="text-xl sm:text-2xl font-light font-standard mt-3">
-            I&apos;m a new grad <span className="font-bold">software engineer</span> based in Los Angeles, CA. If I&apos;m not coding I&apos;m probably lifting weights or playing guitar.
+            I&apos;m a <span className="font-bold">graduate student</span> at the University of California, Irvine! If I&apos;m not coding, I&apos;m either lifting weights or playing video games!
           </h3>
 
           {/* Photo Gallery */}
@@ -61,6 +62,7 @@ export default function Home() {
 
         </div>
       </main>
+      </div>
     );
   }
 
